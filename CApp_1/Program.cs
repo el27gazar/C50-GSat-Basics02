@@ -122,8 +122,20 @@ using CApp_1;
 #region Question 12
 //Q12. Declare a string? reviewer = null;. Print whether it is null.
 
-string? reviewer = null;
-Console.WriteLine(reviewer is not null);
-//Console.WriteLine(reviewer is null);
-//Console.WriteLine(reviewer == null);
+//string? reviewer = null;
+//Console.WriteLine(reviewer is not null);
+////Console.WriteLine(reviewer is null);
+////Console.WriteLine(reviewer == null);
+#endregion
+
+#region Question 13
+//Q13. Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the program, and
+//print the result.
+
+Book? book = null;
+
+string? title = book?.Title;
+
+Console.WriteLine(title);
+
 #endregion
