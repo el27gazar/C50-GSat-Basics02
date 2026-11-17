@@ -78,10 +78,21 @@ using CApp_1;
 #region Question 8
 //Q08. Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,
 //use int.TryParse() to safely try converting it, and print "Invalid number" if it fails
-string yearText = "2023";
-int year = int.Parse(yearText);
-string badText = "abc";
-int badNumber = int.TryParse(badText, out int result) ? result : throw new FormatException("Invalid number");
-Console.WriteLine(badNumber);
-Console.WriteLine(year);
+//string yearText = "2023";
+//int year = int.Parse(yearText);
+//string badText = "abc";
+//int badNumber = int.TryParse(badText, out int result) ? result : throw new FormatException("Invalid number");
+//Console.WriteLine(badNumber);
+//Console.WriteLine(year);
+#endregion
+
+#region Question 9
+
+//Given int pages = 464;, convert it into a string using ToString() and print its type using GetType()
+//to prove it's now a string.
+
+int pages = 464;
+string pagesString = pages.ToString();
+Console.WriteLine(pagesString);
+Console.WriteLine(pagesString.GetType());
 #endregion
