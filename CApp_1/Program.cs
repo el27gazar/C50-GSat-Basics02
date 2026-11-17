@@ -132,10 +132,18 @@ using CApp_1;
 //Q13. Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the program, and
 //print the result.
 
+//Book? book = null;
+
+//string? title = book?.Title;
+
+//Console.WriteLine(title);
+
+#endregion
+
+#region Question 14
+//Q14. Using title from the previous question, use ?? to print "Untitled" if title is null. Then use ??= to
+//assign title the value "Untitled" only if it's still null
 Book? book = null;
-
-string? title = book?.Title;
-
+string? title = book?.Title ?? "Untitled";
 Console.WriteLine(title);
-
 #endregion
