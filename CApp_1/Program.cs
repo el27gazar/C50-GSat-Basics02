@@ -3,9 +3,23 @@
 #region Question 1
 // Q01. Create a Book class with a Title (string) and Pages (int). Create a Book object and store it in avariable of type object. Print it.
 
-Book book1 = new Book();
-book1.Tittle = "elbutcher";
-book1.Pages = 300;
-Console.WriteLine(book1);
+//Book book1 = new Book();
+//book1.Tittle = "elbutcher";
+//book1.Pages = 300;
+//Console.WriteLine(book1);
+
+#endregion
+
+#region Question 2
+//Using the Book class above, print the result of calling ToString(), Equals() (compare book with
+//itself), GetHashCode(), and GetType() on book.
+
+Book book1 = new Book() { Title = "superman", Pages = 180 };
+Book book2 = new Book() { Title = "batman", Pages = 260 };
+
+Console.WriteLine(book1.ToString());
+Console.WriteLine(book1.GetType());
+Console.WriteLine(book2.Equals(book1));
+Console.WriteLine(book1.GetHashCode());
 
 #endregion
