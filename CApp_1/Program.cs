@@ -14,12 +14,20 @@
 //Using the Book class above, print the result of calling ToString(), Equals() (compare book with
 //itself), GetHashCode(), and GetType() on book.
 
-Book book1 = new Book() { Title = "superman", Pages = 180 };
-Book book2 = new Book() { Title = "batman", Pages = 260 };
+//Book book1 = new Book() { Title = "superman", Pages = 180 };
+//Book book2 = new Book() { Title = "batman", Pages = 260 };
 
-Console.WriteLine(book1.ToString());
-Console.WriteLine(book1.GetType());
-Console.WriteLine(book2.Equals(book1));
-Console.WriteLine(book1.GetHashCode());
+//Console.WriteLine(book1.ToString());
+//Console.WriteLine(book1.GetType());
+//Console.WriteLine(book2.Equals(book1));
+//Console.WriteLine(book1.GetHashCode());
 
+#endregion
+
+#region Question 3
+//Q03. Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
+//int pages = "464";
+
+int pages = int.Parse("464");
+Console.WriteLine(pages);
 #endregion
