@@ -1,4 +1,5 @@
-﻿using CApp_1;
+﻿using System.Runtime.Intrinsics.X86;
+using CApp_1;
 
 #region Question 1
 // Q01. Create a Book class with a Title (string) and Pages (int). Create a Book object and store it in avariable of type object. Print it.
@@ -69,7 +70,18 @@
 
 #region Question 7
 // Given string pagesText = "464";, convert it into an int using the Convert class
-string pagesText = "464";
-int pages = Convert.ToInt32(pagesText);
-Console.WriteLine(pages);
+//string pagesText = "464";
+//int pages = Convert.ToInt32(pagesText);
+//Console.WriteLine(pages);
+#endregion
+
+#region Question 8
+//Q08. Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,
+//use int.TryParse() to safely try converting it, and print "Invalid number" if it fails
+string yearText = "2023";
+int year = int.Parse(yearText);
+string badText = "abc";
+int badNumber = int.TryParse(badText, out int result) ? result : throw new FormatException("Invalid number");
+Console.WriteLine(badNumber);
+Console.WriteLine(year);
 #endregion
