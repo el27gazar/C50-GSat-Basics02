@@ -28,6 +28,24 @@
 //Q03. Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
 //int pages = "464";
 
-int pages = int.Parse("464");
-Console.WriteLine(pages);
+//int pages = int.Parse("464");
+//Console.WriteLine(pages);
+#endregion
+
+#region Question 4
+//Q04.Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by
+//zero", and then prints "Done" in a finally block.
+int number = 10;
+try
+{
+    int result = number / 0;
+}
+catch (Exception ex)
+{
+    Console.WriteLine( ex.Message);
+}
+finally
+{
+    Console.WriteLine("Done");
+}
 #endregion
