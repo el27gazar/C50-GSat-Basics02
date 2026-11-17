@@ -52,7 +52,17 @@
 
 #region Question 5
 //Q05. Declare an int pages = 300; then store it in a double variable without using a cast.
-int pages = 300;
-double pagesDouble = pages;
-Console.WriteLine(pagesDouble);
+//int pages = 300;
+//double pagesDouble = pages;
+//Console.WriteLine(pagesDouble);
+#endregion
+
+#region Question 6
+//Declare a double price = 49.99; then convert it into an int using a cast.
+
+double price = 49.99;
+//int priceInt = int.Parse(price.ToString());
+int priceInt = (int)price;
+Console.WriteLine(priceInt);
+
 #endregion
